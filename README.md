@@ -1,3 +1,12 @@
+## personal config
+
+make shure to add the project in $HOME/documents/web/
+```sh
+cd ~/documents/web/
+git clone https://github.com/Megapixel-code/school_jee_apache_tomcat.git
+```
+
+
 ## Welcome to Apache Tomcat!
 
 ### What Is It?
