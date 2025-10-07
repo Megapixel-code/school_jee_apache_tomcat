@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# javac -d ./WEB-INF/classes/ ./WEB-INF/classes/*.java
-
+clear
+../../bin/shutdown.sh
+../../bin/startup.sh
 javac -cp .:"$CATALINA_HOME"/lib/servlet-api.jar WEB-INF/classes/*.java
-
+tree -a
