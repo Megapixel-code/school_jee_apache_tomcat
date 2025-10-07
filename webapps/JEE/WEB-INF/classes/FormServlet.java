@@ -1,7 +1,6 @@
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import java.io.*;
-import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
 
 public class FormServlet extends HttpServlet {
    public void doGet(HttpServletRequest request, HttpServletResponse response)
