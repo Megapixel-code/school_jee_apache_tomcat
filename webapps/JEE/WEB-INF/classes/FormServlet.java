@@ -1,6 +1,7 @@
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.*;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class FormServlet extends HttpServlet {
    public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -11,11 +12,13 @@ public class FormServlet extends HttpServlet {
       String password = request.getParameter("password");
 
       RequestDispatcher rd;
-      if ((login != null) && (password != null)) {
+
+      if (((login != null) && (password != null)) && ((login != "") && (password != ""))) {
          rd = request.getRequestDispatcher("/hello.html");
-      } else {
+      }  else {
          rd = request.getRequestDispatcher("/home.html");
       }
+
       rd.include(request, response);
    }
 }
